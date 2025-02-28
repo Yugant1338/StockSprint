@@ -1,22 +1,28 @@
-# IPO Web Application & REST API Development
+# StockSprint - Your Ultimate IPO Tracking Platform
+StockSprint is a full-stack web application that provides real-time IPO tracking and insights. Whether it's upcoming, ongoing, or already listed IPOs, StockSprint provides detailed insights, allowing users to stay informed and make well-informed investment decisions.
+
+The platform offers a user-friendly interface, ensuring seamless navigation through various IPO listings with complete details. Users can explore IPOs effortlessly, while admins have dedicated access to manage IPO listings—adding, modifying, or deleting IPOs as required.
+
+With real-time updates, secure authentication, and a well-organized dashboard, StockSprint simplifies the process of IPO tracking, making it a one-stop solution for market enthusiasts and investors alike. 🚀📈
 
 ## Project Overview
-This project involves the development of an **IPO Web Application and REST API** for **Bluestock Fintech**. The application provides real-time IPO-related information, including company details, price bands, listing data, and downloadable reports. The platform is designed to serve both the **Bluestock website/app** and external client platforms, ensuring secure and efficient data access.
+StockSprint is a full-stack IPO tracking platform providing real-time updates on upcoming, ongoing, and listed IPOs. Users can access key IPO details, while admins manage listings via a secure dashboard. The platform also offers a REST API for seamless data integration.
+
+Built with Node.js, React, Tailwind CSS, JavaScript, and MongoDB, the platform ensures secure and efficient data access for both its website and external clients. With a scalable backend and responsive UI, StockSprint delivers a seamless and intuitive IPO tracking experience for investors. 🚀📊
+
 
 ## Table of Contents
-- [Project Overview](#project-overview)
 - [Objective](#objective)
 - [Tech Stack](#tech-stack)
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Environment Variables](#environment-variables)
-- [Team](#team)
-- [Company](#company)
+
 
 ## Objective
 The goal of this project is to build:
 1. A web application that presents IPO-related information to users.
-2. A REST API that enables seamless data integration for Bluestock and client platforms.
+2. A REST API that enables seamless data integration.
 
 ### The application provides details such as:
 - **Company Name & Logo**
@@ -33,7 +39,7 @@ The goal of this project is to build:
 - **Framework**: Express.js
 - **Database**: MongoDB (Mongoose ORM)
 - **Authentication**: JWT-based authentication
-- **Cloud Storage**: Cloudinary (for image uploads)
+- **Cloud Storage**: Cloudinary (for media uploads)
 - **Development Tools**: Postman (API Testing), Git & GitHub (Version Control)
 
 ### Frontend
@@ -53,11 +59,11 @@ The goal of this project is to build:
 ## Getting Started
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Adarshm22/Bluestock-Fintech.git
+   git clone https://github.com/Yugant1338/StockSprint.git
    ```
 2. Navigate to the project directory:
    ```sh
-   cd Bluestock-Fintech
+   cd StockSprint
    ```
 3. Install backend dependencies:
    ```sh
@@ -73,12 +79,12 @@ The goal of this project is to build:
 6. Start the backend server:
    ```sh
    cd backend
-   npm start
+   npm run dev
    ```
 7. Start the frontend application:
    ```sh
    cd frontend
-   npm start
+   npm run dev
    ```
 
 ## Environment Variables
@@ -86,7 +92,7 @@ Create a `.env` file in the root directory and add the following configuration:
 
 ```env
 # Port for the server to run on
-PORT=3000
+PORT=4000
 
 # MongoDB connection string
 MONGODB_URL=your_mongodb_connection_string
@@ -101,18 +107,13 @@ ACCESS_TOKEN_SECRET_KEY=your_secret_key
 ACCESS_TOKEN_EXPIRES_IN=1h
 ```
 
-## Team
-| Name                 | Role         | Email                           |
-|----------------------|-------------|---------------------------------|
-| **Adarsh Kumar Maurya** | Team Lead   | 22.adarsh.03@gmail.com          |
-| Gulshan Chauhan     | Co-Team Lead | okaygulshan@gmail.com          |
-| Dev Shubhankar      | Developer    | shubhankarrai007@gmail.com     |
-| Himanshu Bandiwadekar | Developer    | bandiwadekarhimanshu@gmail.com |
-| Om Makwana         | Developer    | ommakwana1406@gmail.com        |
-| Durga Prasadu Bomminayuni | Developer    | prasadbommi12345@gmail.com     |
-| Sunny Ramnagina Yadav | Developer    | sunnyyadav.developer@gmail.com |
-| Yugant Chaudhury   | Developer    | yugant.work@gmail.com          |
+## About Me
 
-## Company  
-📧 **hello@bluestock.in**  
-🌐 **[Bluestock Fintech Website](http://www.bluestock.in)**  
+
+Hi, I am Yugant Chaudhury a pre-final-year B.Tech. student at VIT Chennai, specializing in AI and Robotics. Passionate about technology and software development, I strive to apply cutting-edge advancements to real-world challenges.
+
+With strong skills in Full-Stack Development, Data Structures & Algorithms (DSA), and Competitive Coding, I am constantly honing my abilities through projects and coursework. I am eager to collaborate with professionals and contribute to impactful solutions.
+- [**Github**](https://github.com/Yugant1338)
+- [**LinkedIn**](https://www.linkedin.com/in/yugant-chaudhury-252288248/)
+- [**Leetcode**](https://leetcode.com/u/yugant04/)
+🚀 Always learning, building, and innovating!
