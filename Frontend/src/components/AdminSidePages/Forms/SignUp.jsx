@@ -32,9 +32,9 @@ const SignUpForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Form Data:", formData); // Debugging Step
-    
+    const url = `${import.meta.env.VITE_BACKEND_URL}/api/v1/users/registration`;
     try {
-      const response = await fetch(`${process.env.BACKEND_URL}/api/v1/users/registration`, {
+      const response = await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

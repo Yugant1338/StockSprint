@@ -12,14 +12,14 @@ export const AuthContextProvider = ({ children }) => {
     //fetch loged in user data
     const fetchUserData = async () => {
         try {
-            let response = await fetch(`${process.env.BACKEND_URL}/api/v1/users/getUserData`, {
+            let response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/users/getUserData`, {
                 method: "GET",
                 headers: {
                     "Authorization": Token
                 }
             });
             const fetchedData = await response.json();
-
+            console.log(fetchedData)
             if (response.ok) {
                 setuserData(fetchedData.data);
             } else {

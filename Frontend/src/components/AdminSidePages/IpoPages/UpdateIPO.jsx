@@ -60,7 +60,7 @@ const UpdateIPO = () => {
         e.preventDefault();
        try {
        const ToastId =  toast.loading("Updation Under Progress")
-        const response = await fetch(`${process.env.BACKEND_URL}/api/v1/ipos/${id}/updateIpo`,{
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/ipos/${id}/updateIpo`,{
             method:"PATCH",
             headers:{
                 Authorization: Token,

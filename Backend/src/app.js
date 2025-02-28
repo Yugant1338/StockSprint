@@ -6,7 +6,6 @@ const corsOption = {
     Credentials:true,
     origin:[process.env.FRONTEND_URL]
 }
-
 app.use(express.json());
 app.use(express.static("public"));
 app.use(cors(corsOption))

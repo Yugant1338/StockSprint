@@ -23,7 +23,9 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`${process.env.BACKEND_URL}/api/v1/users/login`,{
+
+      const url = `${import.meta.env.VITE_BACKEND_URL}/api/v1/users/login`;
+      const response = await fetch(url,{
         method:"POST",
         headers:{
           'Content-Type':"Application/json"

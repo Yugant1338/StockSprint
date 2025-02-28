@@ -14,7 +14,7 @@ export const IpoContextProvider = ({children})=>{
 
     const fetchIpos = async ()=>{
         try {
-            const response = await fetch(`${process.env.BACKEND_URL}/api/v1/ipos/getIpos`,{
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/ipos/getIpos`,{
                 method:"GET"
             });
 
@@ -43,7 +43,7 @@ export const IpoContextProvider = ({children})=>{
     
     const deleteIpo = async (id)=>{
         try {
-            const response = await fetch(`${process.env.BACKEND_URL}/api/v1/ipos/${id}/deleteIpo`,{
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/ipos/${id}/deleteIpo`,{
                 method:"DELETE",
                 headers:{
                     Authorization : Token
@@ -52,7 +52,7 @@ export const IpoContextProvider = ({children})=>{
 
             const responseData = await response.json();
             if(response.ok){
-                toast.success(responseData.message)
+                toast.success("IPO Deletion Successful")
                 filterIpoAfterDelete(id)
             }else{
                 toast.error(responseData.message)
