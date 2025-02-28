@@ -14,7 +14,7 @@ export const IpoContextProvider = ({children})=>{
 
     const fetchIpos = async ()=>{
         try {
-            const response = await fetch("http://localhost:3000/api/v1/ipos/getIpos",{
+            const response = await fetch(`${process.env.BACKEND_URL}/api/v1/ipos/getIpos`,{
                 method:"GET"
             });
 
@@ -43,7 +43,7 @@ export const IpoContextProvider = ({children})=>{
     
     const deleteIpo = async (id)=>{
         try {
-            const response = await fetch(`http://localhost:3000/api/v1/ipos/${id}/deleteIpo`,{
+            const response = await fetch(`${process.env.BACKEND_URL}/api/v1/ipos/${id}/deleteIpo`,{
                 method:"DELETE",
                 headers:{
                     Authorization : Token

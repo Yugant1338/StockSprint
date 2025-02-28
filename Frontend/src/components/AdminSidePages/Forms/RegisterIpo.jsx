@@ -75,7 +75,7 @@ const IpoForm = () => {
     }
     const toastId = toast.loading("IPO Registration under Process")
     try {
-        const response = await fetch("http://localhost:3000/api/v1/ipos/registerIpo",{
+        const response = await fetch(`${process.env.BACKEND_URL}/api/v1/ipos/registerIpo`,{
             method:"POST",
             headers:{
               "Authorization":Token

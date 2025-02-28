@@ -12,7 +12,7 @@ export const AuthContextProvider = ({ children }) => {
     //fetch loged in user data
     const fetchUserData = async () => {
         try {
-            let response = await fetch("http://localhost:3000/api/v1/users/getUserData", {
+            let response = await fetch(`${process.env.BACKEND_URL}/api/v1/users/getUserData`, {
                 method: "GET",
                 headers: {
                     "Authorization": Token

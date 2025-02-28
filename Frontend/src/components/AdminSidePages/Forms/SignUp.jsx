@@ -34,7 +34,7 @@ const SignUpForm = () => {
     console.log("Form Data:", formData); // Debugging Step
     
     try {
-      const response = await fetch("http://localhost:3000/api/v1/users/registration", {
+      const response = await fetch(`${process.env.BACKEND_URL}/api/v1/users/registration`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
